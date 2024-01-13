@@ -78,10 +78,10 @@ $ git clone https://github.com/samurai71/my-folio
 $ cd my-folio
 
 # Install dependencies
-$ yarn
+$ pnpm
 
 # Run the project
-$ yarn start
+$ pnpm start
 
 # The server will initialize in the <http://localhost:3000>
 ```
