@@ -1,27 +1,36 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+import { PropsWithChildren } from "react";
+import type { Metadata } from "next";
+
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mark Landeryou's Personal Portfollio",
+  title: "Mark Landeryou's Personal Portfolio",
   description:
-    "Mark Landeryou from Sarnia Ontario Canada. This is his personal portfolio for you to enjoy",
+    "Mark Landeryou for Sarnia, Ontario, Canada his personal portfolio",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body className={cn("min-h-screen font-sans")}>
+          <ThemeProvider attribute="class">
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   );
-}
+};
+export default RootLayout;
