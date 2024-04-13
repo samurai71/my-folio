@@ -46,7 +46,7 @@
 
 ## :dart: About
 
-Describe your project
+This is a Portfolio Template for Nextjs.
 
 ## :sparkles: Features
 
