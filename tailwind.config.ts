@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)", "sans-serif"],
+        raleway: ["var(--font-raleway)", "serif"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

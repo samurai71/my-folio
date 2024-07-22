@@ -1,4 +1,4 @@
-// import { Inter } from "next/font/google";
+import { inter, raleway } from './fonts'
 import "./globals.css";
 
 import { PropsWithChildren } from "react";
@@ -14,15 +14,15 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Mark Landeryou's Personal Portfolio",
   description:
-    "Mark Landeryou for Sarnia, Ontario, Canada his personal portfolio",
+    "Mark Landeryou for Sarina, Ontario, Canada his personal portfolio",
 };
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" className={`${inter.variable} ${raleway.variable}`} suppressHydrationWarning>
         <head />
-        <body className={cn("min-h-screen font-sans")}>
+        <body className={cn("min-h-screen")}>
           <ThemeProvider attribute="class">
             <Header />
             {children}
