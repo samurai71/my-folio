@@ -8,6 +8,8 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
     'plugin:tailwindcss/recommended',
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
   ],
   rules: {
     'prettier/prettier': [
@@ -17,9 +19,4 @@ module.exports = {
       },
     ],
   },
-};{
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:storybook/recommended"
-  ]
-}
+};
