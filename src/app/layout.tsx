@@ -9,7 +9,6 @@ import Header from "@/components/Header/Header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mark Landeryou's Personal Portfolio",
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
-      <html lang="en" className={`${inter.variable} ${raleway.variable}`} suppressHydrationWarning>
+      <html lang="en" className={inter.className} suppressHydrationWarning>
         <head />
         <body className={cn("min-h-screen")}>
           <ThemeProvider attribute="class">
