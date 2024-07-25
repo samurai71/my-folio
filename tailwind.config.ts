@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["var(--font-inter)", "sans-serif"],
-        raleway: ["var(--font-raleway)", "serif"],
+        sans: ['Inter var', 'sans-serif'],
+        serif: ['Raleway var', 'serif'],
       },
       keyframes: {
         "accordion-down": {
