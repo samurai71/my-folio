@@ -1,4 +1,4 @@
-import { inter, raleway } from './fonts'
+// import { inter, raleway } from './fonts'
 import "./globals.css";
 
 import { PropsWithChildren } from "react";
@@ -18,8 +18,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <>
-      <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
         <head />
         <body className={cn("min-h-screen")}>
           <ThemeProvider attribute="class">
@@ -29,7 +28,6 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           </ThemeProvider>
         </body>
       </html>
-    </>
   );
 };
 export default RootLayout;

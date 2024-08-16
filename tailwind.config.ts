@@ -9,10 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter var', 'sans-serif'],
-        serif: ['Raleway var', 'serif'],
-      },
+      // fontFamily: {
+      //   sans: ['Inter var', 'sans-serif'],
+      //   serif: ['Raleway var', 'serif'],
+      // },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
